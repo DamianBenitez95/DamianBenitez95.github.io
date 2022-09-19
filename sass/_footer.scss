@@ -1,0 +1,23 @@
+/* Footer */
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    margin-top: 5px;
+    
+    img {
+      width: 150px;
+      border-radius: 10px;
+    }
+    p {
+      font-size: $font-sz;
+    }
+    .logos{
+      width: 25px;
+      height: auto;
+      margin: 3px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }

@@ -1,0 +1,14 @@
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h3 {
+      font-style: oblique;
+    }
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+  
