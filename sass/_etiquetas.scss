@@ -1,5 +1,12 @@
-  /* Etiquetas */
-  .cards {
+/* Etiquetas */
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.cards {
+
     @include flexbox;
     margin-top: 20px;
     padding: 10px;
@@ -30,4 +37,3 @@
     }
     
   }
-  

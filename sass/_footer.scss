@@ -1,5 +1,6 @@
-/* Footer */
-.footer1 {
+
+  /* Footer */
+  .footer1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     
     img {
       width: 150px;
-      border-radius: 10px;
+      border-radius: map-get($pix-rad, pix-m);
     }
     p {
       font-size: $font-sz;
@@ -17,7 +18,8 @@
       width: 25px;
       height: auto;
       margin: 3px;
-      border-radius: 10px;
+      border-radius: map-get($pix-rad, pix-xs);
       margin-top: 20px;
     }
   }
+  

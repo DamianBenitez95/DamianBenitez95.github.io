@@ -1,8 +1,14 @@
 /* Header */
+  
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    a{
+      text-decoration: none;
+      font-size: xx-large;
+      color: black;
+    }
     h3 {
       font-style: oblique;
     }
@@ -10,5 +16,5 @@
       width: 120px;
       height: auto;
     }
+    
   }
-  

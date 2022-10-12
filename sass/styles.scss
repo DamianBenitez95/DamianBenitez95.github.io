@@ -1,17 +1,8 @@
 @import 'variables';
 @import 'header';
-@import 'footer';
-@import 'navegador';
 @import 'etiquetas';
-
-@mixin flexbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
+@import 'footer';
+@import 'historia';
 
 /* Etiquetas generales */
 * {
@@ -27,67 +18,29 @@
     line-height: 50px;
     bottom: 40px;
     right: 40px;
-    border-radius: map-get($pix-rad, $pix-xl );
-    z-index: 100;
+    border-radius: map-get($pix-rad, pix-xl);
+    z-index: 1000px;
   }
   
   #border {
     background-image: linear-gradient(to right, $color-principal, white 40%);
     border: 1px solid $color-secundario;
-    border-radius: map-get($pix-rad, $pix-xs );
+    border-radius: map-get($pix-rad, pix-xs);
     margin: 1px;
   }
 
   /* Carrusel */
   .carousel-inner img {
-    border-radius: 15px;
+    border-radius: map-get($pix-rad, pix-m);
     height: auto;
   }
 
-  /* Historia */
-  .historia {
-    text-align: center;
-    margin-top: 10px;
-    font-size: $font-sz;
-    img {
-      width: 450px;
-      border-radius: map-get($pix-rad , $pix-m );
-      height: auto;
-    }
-  }
-  .historia-index p{
-    text-align: center;
-    margin-top: 10px;
-    font-size: $font-sz;
-  }
-
-  .sabermas {
-    text-align: center;
-    font-size: $font-sz;
-    margin-bottom: 15px;
-    transition: all 0.4s ease;
-    transform: scale(1.1, 1.1);
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px;
-      margin: 10px;
-      border: 1px solid $color-secundario;
-      border-radius: map-get($pix-rad, $pix-xs );
-      background-color: $color-secundario;
-      color: $color-terciario;
-    }
-    &:hover {
-      transition: all 0.4s ease;
-      transform: scale(1.3, 1.3);
-    }
-}
 
   /* Servicios */
   #border2 {
     background-image: url(/images/mapamundi.jpg);
     border: 1px solid $color-secundario;
-    border-radius: map-get($pix-rad, $pix-xs );
+    border-radius: map-get($pix-rad, pix-xs);
     margin: 1px;
   }
   
@@ -103,9 +56,9 @@
       margin: 10px;
     }
     li {
-      padding: 10px;
-      margin: 10px;
-      border-radius: map-get ($pix-rad, $pix-xs );
+      padding: map-get($pix-rad, pix-xs);
+      margin: map-get($pix-rad, pix-xs);
+      border-radius: map-get($pix-rad, pix-xs);
       background-color: $color-secundario;
       color: $color-terciario;
       transition: all 0.4s ease;
@@ -122,8 +75,8 @@
 
    #imgcata {
     height: 300px;
-    margin-bottom: 20px;
-    border-radius: map-get($pix-rad, $pix-xl );
+    margin-bottom: map-get($pix-rad, pix-m);
+    border-radius: 40px;
     align-items: center;
   }
   
@@ -137,15 +90,39 @@
   #border1 {
     background-image: url(/images/contacto.jpg);
     border: 1px solid $color-secundario;
-    border-radius: map-get($pix-rad, $pix-xs );
+    border-radius: map-get($pix-rad, pix-xs);
+    margin: 1px;
   }
 
   .contacto {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    
+    color: white;
+    margin-top: 2px;
   } 
+
+  .enviar{
+    margin-top: 10px;
+    border-radius: map-get($pix-rad, pix-xs);
+  }
+/* Navegador */
+#nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 10px 0px 10px 0px;
+  padding: 0;
+  li a {
+    color: $color-secundario;
+    border-right: 1px solid $color-secundario;
+    padding: 0px 7px;
+  }
+  & :hover {
+    text-decoration: none;
+    border: none;
+  }
+  }
 
 
   @media (max-width: 400px) {
@@ -159,13 +136,13 @@
     }
     .footer1 img {
       width: 100px;
-      border-radius: map-get($pix-rad, $pix-xs );
+      border-radius: map-get($pix-rad, pix-xs);
     }
     .logos {
       width: 20px;
       height: 25px;
       margin: 3px;
-      border-radius: map-get($pix-rad, $pix-xs );
+      border-radius: map-get($pix-rad, pix-xs);
       margin-top: 20px;
     }
   }
